@@ -21,5 +21,13 @@ namespace Calculator.Tests
             // We are asserting that the output should be this
             Assert.Equal(sum, 83);
         }
+        
+        [Fact]
+        public void SubtractToIntegers()
+        {
+            int diff = _calculator.Sub(10, 5);
+
+            Assert.Equal(diff, 5);
+        }
     }
 }
